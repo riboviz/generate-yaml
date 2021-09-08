@@ -5,10 +5,10 @@ account: riboviz
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4457896
-bundleId: 4889627
+bundleId: 5012810
 url: https://riboviz.shinyapps.io/generate-yaml/
-when: 1628125664.57024
-lastSyncTime: 1628125664.57026
+when: 1631120875.2468
+lastSyncTime: 1631120875.24682
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: LICENSE|README.md

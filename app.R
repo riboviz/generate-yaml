@@ -102,7 +102,7 @@ ui <- fluidPage(
              textInput("feature", "Feature type", "CDS", width="100%") # ???
     ),
     tabPanel("Other options",
-             checkboxInput("rpf", "Dataset is an RPF (vs. mRNA) datset", T, width="100%"), # ???
+             # checkboxInput("rpf", "Dataset is an RPF (vs. mRNA) datset", T, width="100%"), # ???
              checkboxInput("build_indices", "Build indices for aligner", T, width="100%"),
              checkboxInput("trim_5p_mismatches", "Trim mismatched 5' base", T, width="100%"),
              checkboxInput("is_riboviz_gff", "GFF file contains 3 elements (UTR5, CDS, UTR3) per gene", T, width="100%"),
@@ -174,8 +174,7 @@ server <- function(input, output) {
                                logical(1))
     all_mandatory_filled <- all(mandatory_filled)
     
-    # enable/disable the download button
-    # based on whether mandatory fields have been populated
+    # enable/disable the download button based on whether mandatory fields have been populated
     shinyjs::toggleState(id="download_yaml", condition=all_mandatory_filled)
     
     # generate yaml text
